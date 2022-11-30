@@ -1,6 +1,10 @@
 <?php
 require "../data/datas.php";
 
+if (!isset($_POST['bookingId'])) {
+  header("Location: booking.php");
+}
+
 // variable
 $harga = 0;
 $services = [];
