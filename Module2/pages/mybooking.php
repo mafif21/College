@@ -1,5 +1,25 @@
 <?php
 require "../data/datas.php";
+
+// variable
+$harga = 0;
+$services = [];
+$deadline = 0;
+$tanggal_mengembalikan = null;
+
+if (isset($_POST['submit'])) {
+  if (isset($_POST['bookingId'])) {
+    foreach ($datas as $data) {
+      if ($_POST['carType'] === $data['name']) {
+        if ($_POST['days'] >= 1) {
+          $harga = $data['harga'] * $_POST['days'];
+        }
+      };
+    };
+
+    $tanggal_mengembalikan = date("Y-m-d", strtotime('+' . $_POST['days'] . 'days', strtotime($_POST['date'])));
+  };
+}
 ?>
 
 <!DOCTYPE html>
