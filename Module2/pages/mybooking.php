@@ -1,2 +1,2 @@
 <?php
-require "./data/data.php";
+require "../data/datas.php";
