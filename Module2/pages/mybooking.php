@@ -59,27 +59,14 @@ if (isset($_POST['submit'])) {
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex justify-content-center " id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link text-light fw-semibold" href="home.php">Home</a>
-            <a class="nav-link text-light fw-semibold" href="booking.php">Booking</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <?php include "../component/navbar.php" ?>
   </header>
   <!-- end of header ( dont change it ) -->
 
   <main>
     <div class="container-fluid">
       <div class="my-5 text-center fw-semibold">
-        <h3>Thank You Muhammad Nurul Afif Maliki For Reserving</h3>
+        <h3>Thank You <?= $_POST['name'] ?> For Reserving</h3>
         <p>Please double check your reservasion details</p>
       </div>
 
