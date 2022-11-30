@@ -2,10 +2,6 @@
 require "../data/datas.php";
 ?>
 
-<?php
-require "../data/datas.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +35,14 @@ require "../data/datas.php";
   <main>
     <div class="container">
       <h3 class="mt-4 text-center fw-semibold">Rent your car now!</h3>
+
+      <div class="col-md-6">
+        <?php if (isset($_GET['image'])) : ?>
+        <img src="../img/<?= $_GET['image'] ?>.jpeg" class="img-fluid">
+        <?php else : ?>
+        <img src="img/spider.jpeg" class="img-fluid">
+        <?php endif; ?>
+      </div>
     </div>
 
   </main>
