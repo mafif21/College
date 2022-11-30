@@ -236,6 +236,118 @@
     </section>
     <!-- end jenis -->
 
+    <!-- start form -->
+    <section id="pendaftaran" class="py-5">
+      <div class="container">
+        <h3 class="text-center fw-bold my-5">Pendaftaran Mobil</h3>
+
+        <div class="d-flex justify-content-center">
+          <form action="#" class="w-75">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                name="email"
+              />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nama"
+                aria-describedby="emailHelp"
+                name="nama"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="hp" class="form-label">No Hp</label>
+              <input
+                type="text"
+                class="form-control"
+                id="hp"
+                aria-describedby="emailHelp"
+                name="hp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="alamat" class="form-label">Alamat</label>
+              <textarea
+                class="form-control"
+                id="alamat"
+                style="height: 100px"
+                name="alamat"
+              ></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="jenis-mobil" class="form-label">Jenis Mobil</label>
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="jenis-mobil"
+                name="jenis-mobil"
+              >
+                <option selected>Porsche 718 Spider</option>
+                <option value="Porsche-911-GT4">Porsche 911 GT4</option>
+                <option value="Porsche-911-RS">Porsche 911 RS</option>
+                <option value="Porsche-911-GT3">Porsche 911 GT3</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="question" class="form-label"
+                >Membutuhkan Supir?</label
+              >
+
+              <div class="d-flex">
+                <div class="form-check yes" id="question">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Ya
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Tidak
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <input
+              type="submit"
+              class="btn btn-primary"
+              name="kirim"
+              value="Kirim"
+              id="kirim"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- endform -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
