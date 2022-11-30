@@ -10,6 +10,31 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+
+    <style>
+      .video {
+        width: 550px;
+        height: 300px;
+      }
+
+      .mobil {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .about {
+        text-align: justify;
+      }
+
+      .desc {
+        font-size: 14px;
+      }
+
+      ul li {
+        font-size: 14px;
+      }
+    </style>
   </head>
 
   <body>
@@ -254,9 +279,6 @@
                 aria-describedby="emailHelp"
                 name="email"
               />
-              <div id="emailHelp" class="form-text">
-                We'll never share your email with anyone else.
-              </div>
             </div>
             <div class="mb-3">
               <label for="nama" class="form-label">Nama Lengkap</label>
@@ -308,7 +330,7 @@
                 >Membutuhkan Supir?</label
               >
 
-              <div class="d-flex">
+              <div class="d-flex gap-3">
                 <div class="form-check yes" id="question">
                   <input
                     class="form-check-input"
