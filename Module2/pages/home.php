@@ -33,6 +33,12 @@ require "../data/datas.php";
   <!-- end of header ( dont change it ) -->
 
   <main>
+    <div class="container">
+      <div class="text-center mt-5">
+        <h3 class="mb-4">WELCOME TO EAD RENT</h3>
+        <p>Find your best deal, here!</p>
+      </div>
+    </div>
   </main>
 
   <footer>
