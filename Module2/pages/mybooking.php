@@ -19,6 +19,30 @@ if (isset($_POST['submit'])) {
 
     $tanggal_mengembalikan = date("Y-m-d", strtotime('+' . $_POST['days'] . 'days', strtotime($_POST['date'])));
   };
+
+  if (!empty($_POST['services'])) {
+    foreach ($_POST['services'] as $service) {
+      array_push($services, $service);
+
+      switch ($service) {
+        case 'Health Protocol':
+          $harga += 25000;
+          break;
+
+        case 'Driver':
+          $harga += 100000;
+          break;
+
+        case 'Fuel Filled':
+          $harga += 250000;
+          break;
+
+        default:
+          $harga += 0;
+          break;
+      }
+    }
+  }
 }
 ?>
 
@@ -78,7 +102,7 @@ if (isset($_POST['submit'])) {
               <td><?= $_POST['bookingId'] ?></td>
               <td><?= $_POST['name'] ?></td>
               <td><?= $_POST['date'] ?> <?= $_POST['time'] ?></td>
-              <td><?= $_POST['date'] ?> <?= $_POST['time'] ?></td>
+              <td><?= $tanggal_mengembalikan ?> <?= $_POST['time'] ?></td>
               <td><?= $_POST['carType'] ?></td>
               <td><?= $_POST['phone'] ?></td>
               <td>
@@ -96,7 +120,7 @@ if (isset($_POST['submit'])) {
                 <?php endif; ?>
 
               </td>
-              <td>Rp 900.000</td>
+              <td>Rp <?= number_format($harga, 2, ",", "."); ?></td>
             </tr>
           </tbody>
 
