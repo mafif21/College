@@ -61,8 +61,6 @@ require "../data/datas.php";
                 </div>
               </li>
             </ul>
-
-
           </div>
         </div>
         <?php endforeach; ?>
@@ -72,6 +70,11 @@ require "../data/datas.php";
   </main>
 
   <footer>
+    <div class="navbar navbar-expand-lg bg-light text-dark">
+      <div class="container d-flex justify-content-center ">
+        <p class="fw-semibold">Created by MUHAMMAD NURUL AFIF MALIKI_1202202052</p>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
