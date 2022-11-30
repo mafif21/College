@@ -38,7 +38,37 @@ require "../data/datas.php";
         <h3 class="mb-4">WELCOME TO EAD RENT</h3>
         <p>Find your best deal, here!</p>
       </div>
+      <div class="row justify-content-center my-5">
+        <?php foreach ($datas as $data) : ?>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+
+            <div class="position-relative">
+              <img src="../img/<?= $data['image']; ?>.jpeg" class="card-img-top" alt="<?= $data['name'] ?>">
+              <div class="card-body position-absolute bottom-0">
+                <h5 class="card-title fw-semibold text-light"><?= $data['name'] ?></h5>
+                <p class="card-text text-secondary">Rp <?= $data['harga'] ?> / Day</p>
+              </div>
+            </div>
+            <ul class="list-group list-group-flush text-center fw-semibold ">
+              <li class="list-group-item text-primary"><?= $data["kursi"] ?> Kursi</li>
+              <li class="list-group-item text-primary"><?= $data["power"] ?> CC</li>
+              <li class="list-group-item text-primary"><?= $data["type"] ?></li>
+              <li class="list-group-item p-0">
+                <div class="card-body bg-primary py-4 text-dark bg-opacity-10 d-flex justify-content-center">
+                  <a href="Afif_booking.php?guest=Muhammad Nurul Afif Maliki&image=<?= $data['image']; ?>&name=<?= $data['name'] ?>&harga=<?= $data['harga'] ?>&"
+                    class="btn btn-primary">Book Now</a>
+                </div>
+              </li>
+            </ul>
+
+
+          </div>
+        </div>
+        <?php endforeach; ?>
+      </div>
     </div>
+
   </main>
 
   <footer>
