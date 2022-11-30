@@ -46,7 +46,7 @@ require "../data/datas.php";
         </div>
 
         <div class="col-md-6">
-          <form action="Afif_mybooking.php" method="POST">
+          <form action="mybooking.php" method="POST">
             <input type="hidden" class="form-control" id="bookingId" name="bookingId" value="<?= rand() ?>">
 
             <div class="mb-3">
